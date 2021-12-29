@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CollegeForum.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark heading">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/images.jfif" width="40" height="40" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                   <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Notice Board</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton class="nav-link" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" Visible="False">Notes</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                               <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Syllabus</asp:LinkButton>
+                            </li>
+                             <li class="nav-item">
+                               <asp:LinkButton class="nav-link" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">View Notice</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                               <asp:LinkButton class="nav-link" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">View Syllabus</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                               <asp:LinkButton class="nav-link" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">View Notes</asp:LinkButton>
+                            </li>
+                            </ul>
+
+                            <ul class="navbar-nav">
+                                 <li class="nav-item active">
+
+                                <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" PostBackUrl="userlogin.aspx">Login</asp:LinkButton>
+
+                            </li>
+                            <li class="nav-item active">
+
+                                <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" PostBackUrl="usersignup.aspx">Sign Up</asp:LinkButton>
+
+                            </li>
+                                  <li class="nav-item active">
+
+                                <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">Logout</asp:LinkButton>
+
+                            </li>
+                                  <li class="nav-item active">
+
+                                <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="False">Hello</asp:LinkButton>
+
+                            </li>
+                                
+</ul>
+                     </div>
+                </div>
+            </nav>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+       <footer class="full-footer">
+
+    <div class="container top-footer">
+      <div class="row">
+        <div class="col-md-6 p-4">
+          <h3>Quick Links</h3>
+         <!-- <a href="#">Home</a><br>   -->
+            <asp:LinkButton ID="LinkButton11" runat="server" OnClick="LinkButton11_Click" Visible="False">Notes</asp:LinkButton><br />
+            <asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton12_Click" Visible="False">Syllabus</asp:LinkButton><br />
+            <asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click" Visible="False">Notice Board</asp:LinkButton>
+             <asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton14_Click" Visible="False">Notes</asp:LinkButton><br />
+            <asp:LinkButton ID="LinkButton15" runat="server" OnClick="LinkButton15_Click" Visible="False">Syllabus</asp:LinkButton><br />
+            <asp:LinkButton ID="LinkButton16" runat="server" OnClick="LinkButton16_Click" Visible="False">Notice Board</asp:LinkButton>
+
+
+          <!--<a href="#"><b>> </b> Notes</a><br>
+          <a href="#"> <b>> </b> Syllabus</a><br>-->
+            
+        </div>
+       
+        <div class="col-md-6 p-4">
+          <h3>Contact Us</h3>
+          <a href="#">  (+91)7488899999</a><br>
+          <a href="#">abc@gmail.com</a><br>
+        <div>
+      </div>
+    </div>
+       </div>
+        </div>
+  <div class="container-fluid bottom-footer">
+    <div class="row">
+      <div class="col-12 pt-2">
+        <p class="bottom-footer-para">
+          Copyrights © 2021 - All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+         
+        
+
+  </footer>
+
+    </form>
+    
+</body>
+</html>
